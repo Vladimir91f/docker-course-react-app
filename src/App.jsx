@@ -8,13 +8,11 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Router>
-      <div style={{ padding: "50px" }}>        
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/module1" element={<Module1 />} />
-        </Routes>
-      </div>
+    <Router basename="/docker-course-react-app">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/module1" element={<Module1 />} />
+      </Routes>
     </Router>
   )
 }
