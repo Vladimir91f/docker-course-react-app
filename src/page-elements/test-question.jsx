@@ -56,7 +56,7 @@ const TestQuestion = ({
 
   return (
     <div className="test">
-      <h2>{question}</h2>
+      <p><b>{question}</b></p>
 
       <div className="options">
         {shuffledOptions.map(opt => {
@@ -91,12 +91,12 @@ const TestQuestion = ({
           Проверить
         </button>
       ) : isCorrect() ? (
-        <h3 className="result good">
+        <p className="result good">
           Молодец! Так держать! 🎉
-        </h3>
+        </p>
       ) : (
         <div className="result">
-          <h3 className="message bad">Ответ не верный, попробуй еще раз 😔</h3>
+          <p className="message bad">Ответ не верный, попробуй еще раз 😔</p>
           <button className="btn retry" onClick={handleReset}>
             Пройти заново
           </button>

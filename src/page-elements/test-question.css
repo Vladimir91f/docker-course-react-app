@@ -13,6 +13,7 @@
 .btn {
   color: white;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .btn.check:disabled { background: #a0a0a0; cursor: not-allowed; }

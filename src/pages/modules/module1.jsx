@@ -4,10 +4,12 @@ import TestQuestion from '../../page-elements/test-question';
 
 function Module1() {
     return (
-        <span>
+        <>
             <h1>Модуль 1</h1>
+
             <Line />
-            <h3 style={{fontWeight: 'unset'}}>Описание модуля 1</h3>
+
+            <p>Описание модуля 1</p>
 
             <TestQuestion
                 question="Какие из этих городов являются столицами стран?"
@@ -20,12 +22,10 @@ function Module1() {
                 ]}
             />
 
-            <div style={{ marginTop: "30px" }}>
-                <Link to="/" style={{ color: "#646cff", textDecoration: "none" }}>
-                    <h3 style={{padding: 0, margin: 0, fontWeight: 'unset'}}>← Вернуться на главную</h3>
-                </Link>
-            </div>
-        </span>
+            <Link to="/">
+                ← Вернуться на главную
+            </Link>
+        </>
     );
 }
 
